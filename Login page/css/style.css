@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  min-height: 590px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container > * {
+  flex: 1 1 400px;
+}
+
+.login-form-container {
+  padding: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form-container > * {
+  width: 60%;
+}
+
+.login-form-container > header > h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.login-form-container > header > h1 > span {
+  color: #4e60ff;
+}
+
+.login-form-container > div > h1 {
+  font-size: 2.5em;
+}
+
+.login-form-container > div > p,
+.form-item-container > span {
+  color: #646573;
+}
+
+.form-item-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.75em;
+}
+
+form input:not([type="checkbox"]) {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+form input {
+  border-radius: 5px;
+  margin-top: 0.3em;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: calc(100% - 26px);
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  border: none;
+  width: 100%;
+  background-color: #4e60ff;
+  color: #fff;
+}
+
+input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.form-item-container > span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}
+
+p:not(h1 + p),
+input[type="submit"],
+h2 {
+  text-align: center;
+}
+
+p > a {
+  text-decoration: none;
+  color: #4e60ff;
+}
+
+.container > aside {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-color: #697bff;
+  padding: 2em 1em 1.5em;
+  font-size: 14px;
+}
+.container > aside > div {
+  position: relative;
+}
+
+.container > aside > div:first-child {
+  width: 624px;
+  height: 524px;
+  margin: 0 auto;
+}
+
+.container > aside img {
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+}
+
+aside > div > div {
+  margin: 0 auto;
+  width: fit-content;
+  box-shadow: 0px 0px 80px #31397866;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff30;
+  margin: 0 0.125em;
+  border-radius: 50%;
+}
+
+.dot:nth-child(2) {
+  background-color: #ffffff;
+}
+
+@media (max-width: 780px) {
+  .login-form-container > * {
+    width: 100%;
+  }
+}
+@media (max-width: 690px) {
+  .container > aside {
+    display: none;
+  }
+  body {
+    min-height: 650px;
+  }
+}

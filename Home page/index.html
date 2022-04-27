@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header class="flex-container">
+      <section>
+        <h1>Food<br /><span>delivery</span></h1>
+        <div class="search-bar-container">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="search" name="search-bar" placeholder="Search" />
+        </div>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="/">Restaurants</a></li>
+          <li>
+            <a href="/"> Deals </a>
+          </li>
+          <li>
+            <a href="/"> My orders </a>
+          </li>
+        </ul>
+        <div>
+          <span class="quantity-badge">4</span>
+          <button>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 1.66666L2.5 4.99999V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V4.99999L15 1.66666H5Z"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 5H17.5"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3333 8.33334C13.3333 9.2174 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.884 11.6667 9.99999 11.6667C9.11593 11.6667 8.26809 11.3155 7.64297 10.6904C7.01785 10.0652 6.66666 9.2174 6.66666 8.33334"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="deals-container flex-container">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="./assets/Deal1-responsive.png"
+          />
+          <img
+            src="./assets/Deal1.png"
+            alt="Deal1"
+            style="border-radius: 18px"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="./assets/Deal2-responsive.png"
+          />
+          <img
+            src="./assets/Deal2.png"
+            alt="Deal2"
+            style="border-radius: 18px"
+          />
+        </picture>
+      </section>
+      <section class="category-menu">
+        <nav>
+          <ul>
+            <li>
+              <div class="category-item">
+                <span>🍕</span>
+                <p>Pizza</p>
+              </div>
+            </li>
+            <li>
+              <div class="category-item category-item-selected">
+                <span>🍔</span>
+                <p>Burger</p>
+              </div>
+            </li>
+            <li>
+              <div class="category-item">
+                <span>🥩</span>
+                <p>BBQ</p>
+              </div>
+            </li>
+            <li>
+              <div class="category-item category-item-selected">
+                <span>🍣</span>
+                <p>Sushi</p>
+              </div>
+            </li>
+            <li>
+              <div class="category-item">
+                <span>🥦</span>
+                <p>Vegan</p>
+              </div>
+            </li>
+            <li>
+              <div class="category-item">
+                <span>🧁</span>
+                <p>Dessert</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="res-suggestion-container">
+        <h1>Nearby restaurants</h1>
+        <section class="res-container flex-container">
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Royal-sushi-house.png')"
+            >
+              <span class="res-featured-item">Featured</span>
+            </div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Royal Sushi House</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT40M">30-40 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$32 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍣</span>
+                  <span>Sushi</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Burgers-&-pizza.png')"
+            >
+              <span class="res-featured-item">Featured</span>
+            </div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <span class="quantity-badge">2</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Burgers & Pizza</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT60M">40-60 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$24 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍔</span>
+                  <span>Burger</span>
+                </span>
+                <span class="res-item-category">
+                  <span>🍕</span>
+                  <span>Pizza</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Ninja-sushi.png')"
+            ></div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Ninja sushi</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT40M">20-40 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$40 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍣</span>
+                  <span>Sushi</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Royal-sushi-house.png')"
+            ></div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Royal Sushi House</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT40M">30-40 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$32 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍣</span>
+                  <span>Sushi</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Burgers-&-pizza.png')"
+            >
+              <span class="res-featured-item">Featured</span>
+            </div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <span class="quantity-badge">2</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#4E60FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Burgers & Pizza</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT60M">40-60 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$24 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍔</span>
+                  <span>Burger</span>
+                </span>
+                <span class="res-item-category">
+                  <span>🍕</span>
+                  <span>Pizza</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="res-item">
+            <div
+              class="res-img-wrapper"
+              style="background-image: url('../assets/Ninja-sushi.png')"
+            >
+              <span class="res-featured-item">Featured</span>
+            </div>
+            <div class="res-details-container">
+              <div class="res-item-info">
+                <span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 1.66667L2.5 5.00001V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V5.00001L15 1.66667H5Z"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.5 5H17.5"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3333 8.33333C13.3333 9.21738 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.8841 11.6667 10 11.6667C9.11595 11.6667 8.2681 11.3155 7.64298 10.6904C7.01786 10.0652 6.66667 9.21738 6.66667 8.33333"
+                      stroke="#C7C8D2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <h1>Ninja sushi</h1>
+              </div>
+
+              <div class="dur-pri-info">
+                <span>
+                  <i class="fa-regular fa-clock"></i>
+                  <time datetime="PT40M">20-40 min</time>
+                </span>
+                <span class="dot"></span>
+                <span>$40 min sum</span>
+              </div>
+              <div class="res-categories">
+                <span class="res-item-category">
+                  <span>🍣</span>
+                  <span>Sushi</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
