@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Account settings</title>
+  </head>
+  <body>
+    <header class="flex-container">
+      <section>
+        <h1>Food<br /><span>delivery</span></h1>
+        <div class="search-bar-container">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="search" name="search-bar" placeholder="Search" />
+        </div>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="/">Restaurants</a></li>
+          <li>
+            <a href="/"> Deals </a>
+          </li>
+          <li>
+            <a href="/"> My orders </a>
+          </li>
+        </ul>
+        <div>
+          <span class="quantity-badge">4</span>
+          <button>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 1.66666L2.5 4.99999V16.6667C2.5 17.1087 2.67559 17.5326 2.98816 17.8452C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8452C17.3244 17.5326 17.5 17.1087 17.5 16.6667V4.99999L15 1.66666H5Z"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.5 5H17.5"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3333 8.33334C13.3333 9.2174 12.9821 10.0652 12.357 10.6904C11.7319 11.3155 10.884 11.6667 9.99999 11.6667C9.11593 11.6667 8.26809 11.3155 7.64297 10.6904C7.01785 10.0652 6.66666 9.2174 6.66666 8.33334"
+                stroke="#4E60FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div></div>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <h1>Settings</h1>
+        <nav class="settings-nav">
+          <ul>
+            <li class="settings-active-item">
+              <div>
+                <div class="settings-item-icon-container">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div>
+                  <h4>Account</h4>
+                  <span> Personal information </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="settings-item-icon-container">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="margin: 10px"
+                  >
+                    <path
+                      d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.3442 3.29018 4.43655 4.6967 3.03003C6.10322 1.6235 8.01088 0.833328 10 0.833328C11.9891 0.833328 13.8968 1.6235 15.3033 3.03003C16.7098 4.43655 17.5 6.3442 17.5 8.33333Z"
+                      stroke="#83859C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 10.8333C11.3807 10.8333 12.5 9.71404 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71404 8.61929 10.8333 10 10.8333Z"
+                      stroke="#83859C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <span> Shippings addresses </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="settings-item-icon-container">
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div>
+                  <h4>Payment method</h4>
+                  <span> Connected credit cards </span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div class="settings-item-icon-container">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="margin: 10px"
+                  >
+                    <path
+                      d="M9.99998 18.3333C9.99998 18.3333 16.6666 15 16.6666 10V4.16667L9.99998 1.66667L3.33331 4.16667V10C3.33331 15 9.99998 18.3333 9.99998 18.3333Z"
+                      stroke="#83859C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4>Security</h4>
+                  <span> Password, 2FA </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="selected-settings-item-container">
+        <h1>Account</h1>
+        <div>
+          <form action="javascript:void(0)">
+            <h1>Personal information</h1>
+            <section>
+              <div class="avatar-settings-container">
+                <label>
+                  <span> Avatar </span>
+                  <input
+                    type="image"
+                    src="./assets/profilePic.png"
+                    alt="Profile image"
+                  />
+                </label>
+
+                <div>
+                  <button class="form-btn">Change</button>
+                </div>
+
+                <div>
+                  <button class="form-btn">Remove</button>
+                </div>
+              </div>
+
+              <div class="txt-inp-container">
+                <label>
+                  <span> First name </span>
+                  <input type="text" name="first-name" value="Jane" required />
+                </label>
+                <label>
+                  <span> Last name </span>
+                  <input
+                    type="text"
+                    name="last-name"
+                    value="Robertson"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="txt-inp-container">
+                <label>
+                  <span> Email </span>
+                  <input
+                    type="email"
+                    name="email"
+                    value="jane.robertson@example.com"
+                    required
+                  />
+                </label>
+                <label>
+                  <span> Phone number </span>
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    value="(217) 555-0113"
+                    required
+                  />
+                </label>
+              </div>
+
+              <h1>Email notifications</h1>
+              <div class="checkbox-inp-container">
+                <div>
+                  <label>
+                    <input type="checkbox" name="new-deals" checked />
+                    New deals
+                  </label>
+                  <label>
+                    <input type="checkbox" name="new-restaurants" checked />
+                    New restaurants
+                  </label>
+                  <label>
+                    <input type="checkbox" name="order-statuses" checked />
+                    Order statuses
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="checkbox" name="password-changes" checked />
+                    Password changes
+                  </label>
+                  <label>
+                    <input type="checkbox" name="special-offers" checked />
+                    Special offers
+                  </label>
+                  <label>
+                    <input type="checkbox" name="newsletter" checked />
+                    Newsletter
+                  </label>
+                </div>
+              </div>
+              <div class="log-out-btn-container">
+                <button class="form-btn">
+                  <a href="/">Log out</a>
+                </button>
+              </div>
+            </section>
+
+            <div class="form-btns-container">
+              <input
+                class="form-btn"
+                type="submit"
+                name="submit"
+                value="Save changes"
+              />
+              <input class="form-btn" type="reset" value="Discard changes" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
