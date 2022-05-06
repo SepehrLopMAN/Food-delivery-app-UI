@@ -8,22 +8,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Login</title>
   </head>
   <body>
-    <main class="container">
-      <div class="login-form-container">
-        <header>
-          <h1>Food<br /><span>delivery</span></h1>
+    <main class="main-sec-container">
+      <div class="main-sec">
+        <header class="main-sec__logo">
+          <h1 class="logo__heading">
+            Food<br /><span class="logo__heading--delivery">delivery</span>
+          </h1>
         </header>
-        <div>
-          <h1>Login</h1>
-          <p>
+        <div class="main-sec__login-form-container">
+          <h1 class="login-form-container__heading--login">Login</h1>
+          <p class="login-form-container__paragraph--sign-in-details">
             Sign in with your data that you entered during your registration.
           </p>
-          <form action="/">
-            <div class="form-item-container">
+          <form class="form-sec" action="/" method="post">
+            <div class="form-sec__item-container">
               <label>
                 Email
                 <input
@@ -34,7 +36,7 @@
                 />
               </label>
             </div>
-            <div class="form-item-container">
+            <div class="form-sec__item-container">
               <label>
                 Password
                 <input
@@ -48,28 +50,33 @@
                 <i class="fa-regular fa-eye"></i>
               </span>
             </div>
-            <div class="form-item-container">
+            <div class="form-sec__item-container">
               <label>
                 <input type="checkbox" name="keep-user-logged-in" />
                 Keep me logged in
               </label>
             </div>
-            <div class="form-item-container">
+            <div class="form-sec__item-container">
               <input type="submit" name="submit" value="Login" />
             </div>
           </form>
-          <p><a href="/">Forgot password</a></p>
+          <p class="login-form-container__paragraph--forgot-pwd">
+            <a href="/">Forgot password</a>
+          </p>
         </div>
 
-        <p>Don't have an account? <a href="/">Sign up</a></p>
+        <p class="login-form-container__paragraph--registeration">
+          Don't have an account? <a href="/">Sign up</a>
+        </p>
       </div>
-      <aside>
-        <div>
+      <aside class="main-sec__reviews">
+        <div class="reviews__img-container">
           <img
             src="./assets/Ad1.png"
             alt="ads1"
             width="294"
             height="279"
+            class="reviews__img--ads"
             style="right: 0"
           />
           <img
@@ -77,6 +84,7 @@
             alt="ads2"
             width="618"
             height="132"
+            class="reviews__img--ads"
             style="top: auto; bottom: 0; z-index: 10"
           />
           <img
@@ -84,22 +92,23 @@
             alt="reviews"
             width="313"
             height="440"
+            class="reviews__img--ads"
             style="box-shadow: -40px 70px 80px #3139784d"
           />
         </div>
 
-        <div>
+        <div class="reviews__txt-container">
           <h2>Leave reviews for all meals</h2>
-          <p>
+          <p class="reviews__paragraph--discription">
             Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo
             probatus. <br />
             molestiae eirmod assentior eum ne, et omnis antiopam mel.
           </p>
-          <div>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <div class="reviews__img-slides-dots-container">
+            <span class="reviews__img-slides--dot"></span>
+            <span class="reviews__img-slides--dot"></span>
+            <span class="reviews__img-slides--dot"></span>
+            <span class="reviews__img-slides--dot"></span>
           </div>
         </div>
       </aside>

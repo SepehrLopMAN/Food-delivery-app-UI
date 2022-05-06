@@ -1,0 +1,7 @@
+@mixin flex-builder($dir: row, $JC: normal, $AI: normal, $wrap_status: nowrap) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $JC;
+  align-items: $AI;
+  flex-wrap: $wrap_status;
+}

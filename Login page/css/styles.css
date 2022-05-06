@@ -1,0 +1,217 @@
+@media (max-width: 780px) {
+  .main-sec > * {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 690px) {
+  .main-sec-container > .main-sec__reviews {
+    display: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.main-sec-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+}
+
+.main-sec-container > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+}
+
+.main-sec-container > .main-sec__reviews {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #4e60ff;
+  padding: 2em 1em 1.5em;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.main-sec-container > .main-sec__reviews > .reviews__img-container,
+.main-sec-container > .main-sec__reviews .reviews__txt-container {
+  position: relative;
+}
+
+.main-sec-container > .main-sec__reviews > .reviews__img-container:first-child,
+.main-sec-container > .main-sec__reviews .reviews__txt-container:first-child {
+  width: 624px;
+  height: 524px;
+  margin: 0 auto;
+}
+
+.main-sec-container > .main-sec__reviews > .reviews__img-container h2,
+.main-sec-container > .main-sec__reviews .reviews__txt-container h2 {
+  text-align: center;
+}
+
+.main-sec-container > .main-sec__reviews .reviews__img--ads {
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 80px #31397866;
+          box-shadow: 0px 0px 80px #31397866;
+}
+
+.main-sec {
+  padding: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-sec > * {
+  width: 60%;
+}
+
+.main-sec > .main-sec__logo > .logo__heading {
+  font-size: 16px;
+  margin: 0;
+}
+
+.main-sec > .main-sec__logo > .logo__heading > .logo__heading--delivery {
+  color: #4e60ff;
+}
+
+.main-sec > .main-sec__login-form-container > .login-form-container__heading--login {
+  font-size: 2.5em;
+}
+
+.main-sec > .main-sec__login-form-container > .login-form-container__paragraph--sign-in-details {
+  color: #646573;
+}
+
+.form-sec__item-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.75em;
+}
+
+.form-sec__item-container > span {
+  color: #646573;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.form-sec input:not([type="checkbox"]) {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form-sec input {
+  border-radius: 5px;
+  margin-top: 0.3em;
+}
+
+.form-sec input:focus {
+  border-color: #66afe9 !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px #00000014, 0 0 8px #66afe999;
+          box-shadow: inset 0 1px 1px #00000014, 0 0 8px #66afe999;
+}
+
+.form-sec input[type="email"],
+.form-sec input[type="password"] {
+  width: calc(100% - 26px);
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.form-sec input[type="submit"] {
+  border: none;
+  width: 100%;
+  background-color: #4e60ff;
+  color: #fff;
+}
+
+.login-form-container__paragraph--forgot-pwd,
+.login-form-container__paragraph--registeration,
+.reviews__paragraph--discription,
+input[type="submit"] {
+  text-align: center;
+}
+
+.login-form-container__paragraph--registeration > a,
+.login-form-container__paragraph--forgot-pwd > a {
+  text-decoration: none;
+  color: #4e60ff;
+}
+
+.reviews__img-slides-dots-container {
+  text-align: center;
+}
+
+.reviews__img-slides-dots-container .reviews__img-slides--dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  opacity: 0.3;
+  margin: 0 0.125em;
+  border-radius: 50%;
+}
+
+.reviews__img-slides-dots-container .reviews__img-slides--dot:nth-child(2) {
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */

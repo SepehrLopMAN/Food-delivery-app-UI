@@ -1,0 +1,161 @@
+@import "./modules/index";
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $light_black;
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  height: 100vh;
+  min-height: fit-content;
+}
+
+.main-sec-container {
+  @include flex-builder();
+  height: 100%;
+  > * {
+    flex: 1 1 400px;
+  }
+
+  > .main-sec__reviews {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    background-color: $light_blue_clr;
+    padding: 2em 1em 1.5em;
+    font-size: 14px;
+    opacity: 0.9;
+    > .reviews__img-container,
+    .reviews__txt-container {
+      position: relative;
+
+      &:first-child {
+        width: 624px;
+        height: 524px;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .reviews__img--ads {
+      position: absolute;
+      top: 0;
+      border-radius: 15px;
+      box-shadow: 0px 0px 80px $box_shadow_clr;
+    }
+  }
+}
+
+.main-sec {
+  padding: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  > * {
+    width: 60%;
+  }
+  > .main-sec__logo {
+    > .logo__heading {
+      font-size: 16px;
+      margin: 0;
+      > .logo__heading--delivery {
+        color: $light_blue_clr;
+      }
+    }
+  }
+  > .main-sec__login-form-container {
+    > .login-form-container__heading--login {
+      font-size: 2.5em;
+    }
+    > .login-form-container__paragraph--sign-in-details {
+      color: $main_txt_clr;
+    }
+  }
+}
+
+.form-sec__item-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.75em;
+  > span {
+    color: $main_txt_clr;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+  }
+}
+
+.form-sec {
+  input:not([type="checkbox"]) {
+    display: block;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  input {
+    border-radius: 5px;
+    margin-top: 0.3em;
+    &:focus {
+      border-color: #66afe9 !important;
+      outline: 0;
+      box-shadow: inset 0 1px 1px #00000014, 0 0 8px #66afe999;
+    }
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 26px);
+    color: $gray;
+    background-color: $white;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    border: none;
+    width: 100%;
+    background-color: $light_blue_clr;
+    color: $white;
+  }
+}
+
+.login-form-container__paragraph--forgot-pwd,
+.login-form-container__paragraph--registeration,
+.reviews__paragraph--discription,
+input[type="submit"] {
+  text-align: center;
+}
+
+.login-form-container__paragraph--registeration,
+.login-form-container__paragraph--forgot-pwd {
+  > a {
+    text-decoration: none;
+    color: $light_blue_clr;
+  }
+}
+
+.reviews__img-slides-dots-container {
+  text-align: center;
+  .reviews__img-slides--dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: $white;
+    opacity: 0.3;
+    margin: 0 0.125em;
+    border-radius: 50%;
+    &:nth-child(2) {
+      opacity: 1;
+    }
+  }
+}

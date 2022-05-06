@@ -1,3 +1,4 @@
+/* Main CSS file without using SASS */
 ::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
@@ -12,7 +13,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   height: 100vh;
-  min-height: 590px;
+  min-height: fit-content;
 }
 
 .container {

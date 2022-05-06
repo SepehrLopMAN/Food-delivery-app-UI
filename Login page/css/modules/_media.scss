@@ -1,0 +1,14 @@
+@media (max-width: 780px) {
+  .main-sec {
+    > * {
+      width: 100% !important;
+    }
+  }
+}
+@media (max-width: 690px) {
+  .main-sec-container {
+    > .main-sec__reviews {
+      display: none !important;
+    }
+  }
+}
